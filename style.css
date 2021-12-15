@@ -1,0 +1,460 @@
+/* Reset Code and Common Code Starts */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    outline: 0;
+    font-weight: 400;
+}
+html {
+    background-color: #fafafa;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background-color: #fff;
+    width: 120rem;
+    max-width: 100%;
+    margin: auto;
+    box-shadow: 0.1rem 0.1rem 0.1rem #c4c4c4, -0.1rem 0rem 0.1rem #c4c4c4 ;
+}
+.text-justify {
+    text-align: justify;
+}
+.text-white {
+    color: #fff;
+}
+.section-center {
+    padding: 5rem 1rem;
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.section-heading {
+    font-size: 8rem;
+    text-align: center;
+   font-family: 'Italianno', cursive;
+}
+.btn {
+    background-color: rgb(230, 159, .8);
+    border: none;
+    border-radius: 0.6rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem #222;
+    cursor: pointer;
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+/* Reset Code and Common Code Ends */
+
+/* Header Starts */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color: black;
+    color: #fff;
+    padding: 2rem 1rem;
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    min-height: 5vh;
+}
+.logo-figure {
+    border: 1px solid #fff;
+}
+.logo {
+    font-size: 4rem;
+}
+/* menu icon for small screen to hide or open menu starts */
+#menu-icon {
+    display: none;
+}
+/* menu icon for small screen to hide or open menu ends */
+nav li {
+    display: inline-block;
+    margin-right: 2rem;
+    padding: 1rem;
+    transition: all 0.4s;
+}
+nav li:last-child {
+    margin-right: 0;
+}
+nav li:hover {
+    background-color: #1913d5;
+    border-radius: 0.6rem;
+}
+.nav-link {
+    font-size: 1.8rem;
+    color: #fff;
+    cursor: pointer;
+}
+/* Header Ends */
+
+/* Banner Section Starts */
+#blog-banner-section {
+    padding: 5rem 1rem;
+    min-height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#blog-banner-section article {
+    flex-basis: 50%;
+    margin: 1rem;
+}
+.banner-heading {
+    display: inline-block;
+    padding: 1rem;
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    background-color: black;
+    color: #fff;
+}
+.banner-description {
+    font-size: 1.8rem;
+}
+#blog-banner-section aside {
+    flex-basis: 50%;
+    text-align: center;
+}
+.banner-image {
+    width: 55rem;
+    height: 55rem;
+    border: 0.3rem solid;
+}
+/* Banner Section Ends */
+
+/* About Me Section Starts */
+#blog-about {
+    background-color: #a09696;
+}
+.card-container {
+    display: flex;
+    align-items: center;
+}
+.card {
+    flex: 1;
+    border-radius: 0.6rem;
+    background-color: #e9e0e0;
+    padding: 3rem 1rem;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.4s ;
+}
+.card:hover {
+    transform: scale(1.1);
+}
+.card-header {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.card-description {
+    padding: 0.4rem 0;
+    text-align: justify;
+    font-size: 1.6rem;
+    margin-bottom: 5rem;
+}
+/* About Me Section Ends */
+
+/* Archive Section Starts */
+.archives-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+    border-top: 0.2rem solid rgb(104, 98, 98);
+    border-bottom: 0.2rem solid rgb(104, 98, 98);
+}
+.archives-container-lists {
+    display: flex;
+    text-align: center;
+}
+.archives-container-list {
+    margin: 2rem;
+}
+.archives-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.6rem;
+    transition: transform 0.4s;
+}
+.archives-image:hover {
+    transform: scale(1.1);
+}
+/* Archive Section Ends */
+
+/* Blog Posts Section Starts */
+.blog-posts-heading {
+    margin-bottom: 5rem;
+}
+.blog-post {
+    width: 70%;
+    display: flex;
+    margin: 1rem 0;
+    box-shadow: 0.1rem 0.1rem 0.1rem #222, -0.1rem 0 0.1rem #222;
+    transition: transform 0.4s;
+}
+.blog-post:hover {
+    transform: scale(1.1);
+}
+.blog-post-aside {
+    flex: 1;    
+}
+.blog-content {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem;
+    margin-left: 2rem;
+}
+.blog-image {
+    width: 100%;
+    height: 100%;
+}
+.blog-heading {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.blog-sub-heading {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.blog-description {
+    font-size: 1.6rem;
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+.blog-btn {
+    width: 30%;
+}
+/* Blog Posts Section Ends */
+
+/* Contact Section Starts */
+#contact-section {
+    background-color: #5f5d5d;
+    min-height: 90vh;
+}
+#contact-section h2 {
+    margin-top: 4rem;
+}
+#contact-form {
+    padding: 1rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem #222, -0.1rem 0 0.1rem #222;
+    margin: 1rem;
+    color: #eee;
+    display: flex;
+    flex-direction: column;
+}
+.form-control {
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-control label {
+    font-size: 1.6rem;
+    flex: 0.2rem;
+}
+input, textarea {
+    flex: 0.8rem;
+    width: 40rem;
+    font-size: 1.6rem;
+    padding: 2rem 1rem;
+    border: none;
+    border-radius: 0.6rem;
+}
+textarea {
+    resize: none;
+    height: 12vh ;
+}
+.contact-btn {
+    width: 30%;
+}
+.form-btn-field {
+    display: flex;
+    justify-content: flex-end;
+}
+/* Contact Section Ends */
+/* Footer Section Starts */
+footer {
+    background-color: black;
+    padding: 1rem;
+    min-height: 5vh;
+    display: flex;
+    justify-content: space-between;
+}
+.copyright-text {
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1.5rem 0;
+}
+.footer-icon {
+    font-size: 2.5rem;
+}
+
+/* Footer Section Ends */
+
+/* Responisve starts */
+@media (max-width: 992px) {
+/* Banner Section Starts */
+    #blog-banner-section {
+        flex-direction: column;
+    }
+    #blog-banner-section article{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5rem;
+    }
+/* Banner Section Ends */
+/* About Me Section Starts */
+    .card-container {
+        width: 50%;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+/* About Me Section Ends */
+
+}
+
+@media (max-width: 768px) {
+/* Banner Section Starts */
+    html {
+        font-size: 55.5%;
+    }
+    #blog-banner-section article {
+        width: 80%;
+    }
+/* Banner Section Ends */
+/* About Me Section Starts */
+    .card-container {
+        width: 80%;
+    }
+/* About Me Section Ends */
+/* Archive Section Starts */
+#archives {
+    min-height: auto;
+}
+/* Archive Section Ends */
+/* Blog Posts Section Starts */
+.blog-post {
+    flex-direction: column;
+    margin-bottom: 3rem;
+    width: 80%;
+}
+/* Blog Posts Section Ends */
+/* Contact Section Starts */
+#contact-section {
+    min-height: auto;
+}
+/* Contact Section Ends */
+}
+
+@media (max-width: 600px) {
+    html {
+        font-size: 48.5%;
+    }
+/* header starts */
+    header {
+        flex-direction: column;
+    }
+/* menu icon for small screen to hide or open menu starts */
+    #menu-icon {
+    display: block;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    }
+    .hidden {
+        display: none;
+    }
+/* menu icon for small screen to hide or open menu starts */
+
+    nav ul {
+        padding-left: 2.5rem;
+    }
+    nav li {
+        display: block;
+        margin-right: 0;
+        margin: 1rem 0;
+    }
+/* header Ends */  
+/* Banner Section Starts */
+     #blog-banner-section {
+        min-height: auto;
+     }
+     #blog-banner-section article {
+         width: 90%;
+     }  
+     .banner-image {
+         max-width: 100%;
+     } 
+/* Banner Section Ends */
+/* About Me Section Starts */
+    .card-container {
+        width: 90%;
+    }
+    #blog-about {
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+/* About Me Section Ends */
+/* Archive Section Starts */
+    .archives-container-lists {
+        flex-wrap: wrap;
+    }
+/* Archive Section Ends */
+
+/* Blog Posts Section Starts */
+.blog-post {
+    width: 90%;
+}   
+/* Blog Posts Section Ends */
+/* Contact Section Starts */
+#contact-form {
+    width: 100%;
+}
+.form-control {
+    flex-direction: column;
+}
+.form-control label {
+    margin-bottom: 0.5rem;
+}
+/* Contact Section Ends */
+/* Footer Section Starts */
+footer {
+    flex-direction: column;
+    align-items: center;
+}
+#menubar2 {
+    display: flex;
+}
+/* Footer Section Ends */
+}
+
+@media (max-width: 400px) {
+input, textarea {
+/* Contact Section Starts */
+    width: 90%;
+}
+/* Contact Section Ends */
+/* Footer Section Starts */
+
+/* Footer Section Ends */
+}
+/* Responisve Ends */
